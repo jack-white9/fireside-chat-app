@@ -7,11 +7,7 @@ const SignIn = () => {
         firebase.auth().signInWithPopup(provider)
     }
 
-    const signOut = () => {
-        return firebase.auth().currentUser && (
-            <button onClick={() => firebase.auth().signOut()}>Sign Out</button>
-        )
-    }
+
 
     return (
         <button onClick={signInWithGoogle}>Sign in with Google</button>
