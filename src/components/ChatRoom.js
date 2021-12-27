@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
@@ -28,6 +28,10 @@ const ChatRoom = ({user = null, db = null}) => {
         }
     }, [db])
 
+    useEffect(() => {
+        dummy.current.scrollIntoView({ behaviour: 'smooth' })
+    }, [messages])
+
     const handleOnChange = (event) => {
         setNewMessage(event.target.value)
     }
@@ -46,6 +50,8 @@ const ChatRoom = ({user = null, db = null}) => {
         }
     }
 
+    const dummy = useRef()
+
     return (
         <div className="chatroom__message--container">
             <ul>
@@ -55,8 +61,9 @@ const ChatRoom = ({user = null, db = null}) => {
                     </li>
                 ))}
             </ul>
+
+            <div ref={dummy}></div>
             
-            <div className="chatroom__form--backdrop"/>
             <form onSubmit={handleOnSubmit} className="chatroom__form">
                 <input
                     type="text"

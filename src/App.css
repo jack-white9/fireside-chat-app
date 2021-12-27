@@ -41,6 +41,10 @@ li {
     font-weight: 400;
 }
 
+.header__logo {
+    cursor: default;
+}
+
 .header__button {
     font-size: 16px;
     font-weight: 300;
@@ -90,6 +94,7 @@ li {
 }
 
 /* CHAT ROOM */
+
 .chatroom__message--container {
     display: flex;
     flex-direction: column;
@@ -134,27 +139,11 @@ li {
     color:rgba(255, 255, 255, 0.74);
 }
 
-.chatroom__message--text {
-
-}
-
-.chatroom__form--backdrop { /* this has broken */
-    position: sticky;
-    bottom: 0;
-    left: 0;
-    margin: 0 auto;
-    width: 100vw;
-    height: 50px;
-    background-color: #36383e;
-}
-
 .chatroom__form {
     position: sticky;
+    left: 40px;
     bottom: 0;
-    left: 0;
-    z-index: 1;
-    margin: 0 auto;
-    width: calc(100vw - 75px);
+    width: 95vw;
 }
 
 .chatroom__text-input {
