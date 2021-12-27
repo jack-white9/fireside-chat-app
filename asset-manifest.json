@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/fireside-chat-app/static/css/main.bc3405a9.css",
-    "main.js": "/fireside-chat-app/static/js/main.ee07ceb2.js",
+    "main.js": "/fireside-chat-app/static/js/main.c885eebd.js",
     "index.html": "/fireside-chat-app/index.html",
     "main.bc3405a9.css.map": "/fireside-chat-app/static/css/main.bc3405a9.css.map",
-    "main.ee07ceb2.js.map": "/fireside-chat-app/static/js/main.ee07ceb2.js.map"
+    "main.c885eebd.js.map": "/fireside-chat-app/static/js/main.c885eebd.js.map"
   },
   "entrypoints": [
     "static/css/main.bc3405a9.css",
-    "static/js/main.ee07ceb2.js"
+    "static/js/main.c885eebd.js"
   ]
 }
