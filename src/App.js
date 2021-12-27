@@ -1,5 +1,5 @@
 // React/Styles
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css'
 
 // Firebase
@@ -11,7 +11,6 @@ import 'firebase/compat/firestore'
 import ChatRoom from './components/ChatRoom'
 import SignIn from './components/SignIn'
 import SignOut from './components/SignOut'
-import { useEffect } from 'react/cjs/react.development'
 
 firebase.initializeApp({
     apiKey: "AIzaSyDYCoKB-glPUXsPM6xE0aFSKa6Ke86tbFA",
