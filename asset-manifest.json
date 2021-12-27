@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/fireside-chat-app/static/css/main.bc3405a9.css",
+    "main.js": "/fireside-chat-app/static/js/main.ee07ceb2.js",
+    "index.html": "/fireside-chat-app/index.html",
+    "main.bc3405a9.css.map": "/fireside-chat-app/static/css/main.bc3405a9.css.map",
+    "main.ee07ceb2.js.map": "/fireside-chat-app/static/js/main.ee07ceb2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bc3405a9.css",
+    "static/js/main.ee07ceb2.js"
+  ]
+}
