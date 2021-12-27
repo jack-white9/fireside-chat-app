@@ -99,6 +99,7 @@ li {
 
 .chatroom__message {
     display: flex;
+    align-items: center;
     gap: 30px;
     padding: 10px 75px;
 }
