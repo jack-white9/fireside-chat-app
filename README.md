@@ -18,13 +18,14 @@ Fireside was built with:
 * CSS3
 
 ## Roadmap
-- [ ] Add mobile responsiveness
+- [x] Add mobile responsiveness
+- [ ] Clear message bar after submission
+- [ ] Fix issue with header stickiness while scrolling on small mobile (375px width)
 
 ## License
 
 Distributed under the MIT License.
 
-<!-- CONTACT -->
 ## Contact
 
 Jack White - [LinkedIn](https://linkedin.com/in/jack-f-white)

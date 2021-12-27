@@ -93,6 +93,17 @@ li {
     filter: brightness(85%);
 }
 
+@media (max-width: 575px) {
+    .main__login--prompt {
+        font-size: 30px;
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .header {
+    }
+}
+
 /* CHAT ROOM */
 
 .chatroom__message--container {
@@ -143,7 +154,7 @@ li {
     position: sticky;
     left: 40px;
     bottom: 0;
-    width: 95vw;
+    width: 95%;
 }
 
 .chatroom__text-input {
@@ -161,4 +172,18 @@ li {
 
 .chatroom__text-input:focus {
     outline: none;
+}
+
+@media (max-width: 450px) {
+    .chatroom__message {
+        gap: 30px;
+        padding: 10px 25px;
+    }
+
+    .chatroom__form {
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        width: 95%;
+    }
 }
