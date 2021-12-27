@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import firebase from 'firebase/compat/app'
 import 'firebase/compat/firestore'
 import 'firebase/compat/auth'
+import Message from './Message'
 
 const ChatRoom = ({user = null, db = null}) => {
     const [messages, setMessages] = useState([])
@@ -49,9 +50,12 @@ const ChatRoom = ({user = null, db = null}) => {
         <div>
             <ul>
                 {messages.map(message => (
-                    <li key={message.id}>{message.text}</li>
+                    <li key={message.id}>
+                        <Message {...message} />
+                    </li>
                 ))}
             </ul>
+            
             <form onSubmit={handleOnSubmit}>
                 <input
                     type="text"
