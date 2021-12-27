@@ -37,13 +37,15 @@ function App() {
   }, [])
 
   return (
-    <div>
-      <header>
+    <div className="container">
+      <header className="header">
+        <h1 className="header__logo">Fireside</h1>
         <SignOut />
       </header>
-      <section>
+      <main className="main__container">
+        {user ? null : <p className="main__login--prompt">Looks like you aren't logged in.</p>}
         {user ? <ChatRoom user={user} /> : <SignIn />}
-      </section>
+      </main>
     </div>
   );
 }

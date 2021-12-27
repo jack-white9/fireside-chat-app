@@ -48,7 +48,7 @@ const ChatRoom = ({user = null, db = null}) => {
 
     return (
         <div>
-            <ul>
+            <ul className="chatroom__message--container">
                 {messages.map(message => (
                     <li key={message.id}>
                         <Message {...message} />
