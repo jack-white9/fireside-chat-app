@@ -47,8 +47,8 @@ const ChatRoom = ({user = null, db = null}) => {
     }
 
     return (
-        <div>
-            <ul className="chatroom__message--container">
+        <div className="chatroom__message--container">
+            <ul>
                 {messages.map(message => (
                     <li key={message.id}>
                         <Message {...message} />
@@ -56,16 +56,15 @@ const ChatRoom = ({user = null, db = null}) => {
                 ))}
             </ul>
             
-            <form onSubmit={handleOnSubmit}>
+            <div className="chatroom__form--backdrop"/>
+            <form onSubmit={handleOnSubmit} className="chatroom__form">
                 <input
                     type="text"
                     value={newMessage}
                     onChange={handleOnChange}
                     placeholder="Type message..."
+                    className="chatroom__text-input"
                 />
-                <button type="submit">
-                    Send
-                </button>
             </form>
         </div>
     )

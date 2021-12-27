@@ -23,7 +23,8 @@ const Message = ({
 
                     {createdAt?.seconds ? (
                         <span className="chatroom__message--time">
-                            {formatRelative(new Date(createdAt.seconds * 1000),  new Date())}
+                            {formatRelative(new Date(createdAt.seconds * 1000),  new Date())[0].toUpperCase()
+                            + formatRelative(new Date(createdAt.seconds * 1000),  new Date()).slice(1)}
                         </span>
                     ) : null}
                 </div>
